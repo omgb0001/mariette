@@ -1,0 +1,277 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+    --primary-blue: #5175FF;
+    --secondary-blue: #829CFF;
+    --light-blue: #C1CFFF;
+    --lighter-blue: #E4EAFF;
+    --dark-gray: #1C1F2C;
+    --gray: #212529;
+    --light-gray: #F8F8F8;
+    --white: #FFFFFF;
+
+}
+
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: .8rem;
+}
+
+.logo {
+    height: 2rem;
+    margin-top: 2rem;
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+.p1 {
+    margin-top: 0;
+    margin-bottom: 1.7rem;
+}
+
+.p4 {
+    margin-bottom: 2rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+header {
+    background-color: var(--light-gray);
+}
+.top {
+    background-color: var(--light-gray);
+    height: 60vh;
+    max-width: -10px;
+}
+
+.down {
+    background-color: var(--dark-gray);
+    height: 110vh;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+}
+
+.container {
+    width: min(55em, 100%);
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.text {
+    margin: 0 3rem;
+}
+.charts {
+    margin-top: 2rem;
+    height: 25vh;
+}
+
+.cards {
+    position: static;
+    background-color: transparent;
+    margin: 4rem 4rem 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.card {
+    padding: 1rem 1rem;
+    text-align: center;
+    padding-bottom: 2.5rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.btn{
+    border: none;
+    font-size: .6rem;
+    font-weight: 700;
+    padding: .7rem 2rem;
+    
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.basic, .ultimate {
+    background-color: var(--white);
+}
+
+.primary {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.secondary {
+    background-color: var(--lighter-blue);
+    color: var(--primary-blue);
+}
+
+.ternary {
+    background-color: var(--white);
+    color: var(--primary-blue);
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* SECOND PAGE */
+
+.background {
+    display: flex;
+    flex-direction: column;
+    margin: -1rem;
+    
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color:var(--light-gray) ;
+}
+
+.aside {
+    background-color: var(--dark-gray);
+    height: 100vh;
+    margin-right: -10;
+}
+
+form{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.form{
+    margin: 2rem auto;
+    margin-bottom: -10rem;
+    z-index: 3000;
+    width: 80%;
+    
+
+}
+
+label {
+    margin-left: 1rem;
+}
+
+.h1 {
+    font-size: 3.5rem;
+}
+
+.p {
+    font-size: 1.4rem;
+}
+
+.input{
+    height: 3.5rem;
+    font-size: 1.4rem;
+    border-color: rgb(181, 178, 178);
+    margin: 1rem;
+    border-style:solid;
+    border-radius: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.btn-input {
+    margin-top: 2rem;
+    height: 4rem;
+}
+
+/* MEDIA QUERRIES */
+
+@media only screen and (min-width: 45em){
+    main {
+        flex-direction: row-reverse;
+    }
+    .container{
+        width: min(45em, 100%);
+    }
+
+    .charts {
+        height:37vh ;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+}
+    
+@media only screen and (min-width:60em){
+    main {
+            flex-direction: row-reverse;
+        }
+    .container {
+            width: min(65em, 100%);
+    }
+
+    .cards {
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .card {
+        padding: 2rem 2rem;
+
+    }
+
+    .charts {
+            margin-top: 2rem;
+            height: 45vh;
+    }
+    p{
+        font-size: .9rem;
+    }
+
+    .background {
+        flex-direction: row;
+        
+    }
+
+    .main {
+        width: 60%;
+    }
+
+    .text {
+        margin-top: 4rem;
+    }
+
+    .aside {
+        width:40% ;
+    }
+
+    .form {
+        width: 60%;
+        margin-left: 20rem;
+    }
+
+}
